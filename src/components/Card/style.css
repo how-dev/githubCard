@@ -1,0 +1,39 @@
+.card {
+    background: rgb(46, 46, 46);
+    box-shadow: 2px 2px 3px black;
+    width: 250px;
+    color: white;
+    text-align: center;
+    cursor:pointer;
+    transition: .2s;
+    margin-top: 90px;
+    border-radius: 6px;
+}
+.card:hover {
+    box-shadow: 2px 2px 6px black;
+}
+.avatar {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.link {
+    text-decoration: none;
+    color: darkorange;
+    transition: .2s;
+}
+.link:hover {
+    color: rgb(255, 187, 103);
+}
+.follow {
+    width: 45px;
+    background: darkorange;
+    border-radius: 40px;
+
+}
+.fama {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
