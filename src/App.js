@@ -23,6 +23,9 @@ const App = () => {
       })
     }
   }
+  const toggle = () => {
+    active ? setActive(false) : setActive(true)
+  }
 
   return (
     <div className="App">
@@ -33,9 +36,12 @@ const App = () => {
           </div><br/>
           <input onChange={addUser} className='gitName'></input>
           <button onClick={() => handleToggle(user)} className='buscar'>Buscar</button>
+          {!active && <button onClick={toggle} className='buscar'>Mostrar</button>}
+          {active && <button onClick={toggle} className='buscar'>Esconder</button>}
         </div>
         <div id='container'>
           {active && <Card img={card.avatar_url} name={card.name} location={card.location} link={card.html_url} followers={card.followers}/>}
+          
         </div>
       </header>
     </div>
